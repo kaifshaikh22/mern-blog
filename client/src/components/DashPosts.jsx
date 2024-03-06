@@ -53,7 +53,7 @@ export default function DashPosts() {
   const handleDeletePost = async () => {
     setShowModal(false);
     try {
-      const res = await fetch(
+      const res = await fetch (
         `/api/post/deletepost/${postIdToDelete}/${currentUser._id}`,
         {
           method: 'DELETE',
